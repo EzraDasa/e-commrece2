@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/category.css">
+    <title>Animation</title>
+</head>
+<body>
+    <header>
+        <nav id="nav_bar">
+            <ul class="ulNav">
+                <li class="categoryNav"><a href="/">Home</a></li>
+                <li class="categoryNav"><a href="./action.html">Action</a></li>
+                <li class="categoryNav"><a href="./drama.html">Drama</a></li>
+                <li class="categoryNav"><a href="./comedy.html">Comedy</a></li>
+                <li class="categoryNav"><a href="./animation.html">Animation</a></li>
+                <li class="categoryNav"><a href="./contact.html">contact</a></li>
+                <li class="categoryNav"><a href="./add_movie.html">add movie</a></li>
+            </ul>
+            <div id="search">
+                <div id="searchContiner">
+                    <input id="inputMovie" type="text" onkeyup="searchMovie()" placeholder="Movie Search">&nbsp;
+                    <button type="button" id="btnSearch">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button> &nbsp;
+                    <a href="./cart.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <ul id="checksMovie">
+                    
+                </ul>
+                
+
+            </div>
+        </nav>
+    </header><br>
+    <main id="main">
+        <h1 class="headCategory" id="headCategory">animation</h1>
+        <div class="Movies">
+            <div id="moviesCard" >     
+            </div>
+        </div>
+        <div id="popUp">
+        </div>
+    </main>
+
+    <hr>
+    <footer>
+        <div class="about">
+            
+            <div class="contact_about">
+                <br>
+                <h2 style="text-align: center;color: white;">contact :</h2>
+                <hr>
+                <div class="contact_icon" >
+                    <a href="https://www.instagram.com/ezradasa/"><img class="img_icon" src="https://i.ibb.co/hmLMwdP/icon-instagram.png"></a>
+                    <a href="https://www.facebook.com/people/%D7%A2%D7%96%D7%A8%D7%90-%D7%93%D7%A1%D7%94/100000602785592"><img class="img_icon" src="https://i.ibb.co/p2rZnzL/facebook-icon.png"></a>
+                    <a href="https://github.com/EzraDasa"><img class="img_icon" src="https://i.ibb.co/ZHfWkt3/Git-Hub-logo.png" style="width: 50px;height: 28px;"></a>
+                    <a href="https://www.linkedin.com/login"><img class="img_icon" src="https://i.ibb.co/myWXRJt/linked-in-icon.png" style="width: 50px;height: 25px;"></a>
+                </div><br>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="javascript/client.js" ></script>
+</body>
+</html>

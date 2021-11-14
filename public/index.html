@@ -1,0 +1,423 @@
+<!D1OCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>movies</title>
+</head>
+<body>
+    <header id="height" >
+        <nav id="nav_bar">
+            <ul class="ulNav">
+                <li class="categoryNav"><a href="../index.html">Home</a></li>
+                <li class="categoryNav"><a href="./action.html">Action</a></li>
+                <li class="categoryNav"><a href="./drama.html">Drama</a></li>
+                <li class="categoryNav"><a href="./comedy.html">Comedy</a></li>
+                <li class="categoryNav"><a href="./animation.html">Animation</a></li>
+                <li class="categoryNav"><a href="./contact.html">contact</a></li>
+                <li class="categoryNav"><a href="./add_movie.html">add movie</a></li>
+            </ul>
+            <div id="search">
+                <div style="display: flex; height: 100%;align-items: center;">
+                    <input id="inputMovie" type="text" onkeyup="searchMovie()" placeholder="Movie Search">&nbsp;
+                    <button type="button" id="btnSearch">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button> &nbsp;
+                    <a href="./cart.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <ul id="checksMovie">
+                    
+                </ul>
+                
+
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="moviesChange">
+            
+            <div id="logo"><img  id="imgLogo" src="https://i.ibb.co/QnKnHR0/Logo-Makr-7dxi-AM.png"></div>
+            <div id="headTrailer">
+                <h1>trailer : Venom</h1>
+                <p>As Vonom and Eddie need each other to get what they want,<br>
+                     they become more and more connected to each other
+                </p>
+                <button id="btnTrailer"><a href="./action.html"><b> TO BUY </b></a></button>
+
+            </div>
+            <div id="vol" onclick="volume()" value="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-volume-mute" viewBox="0 0 16 16">
+                    <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zM6 5.04 4.312 6.39A.5.5 0 0 1 4 6.5H2v3h2a.5.5 0 0 1 .312.11L6 10.96V5.04zm7.854.606a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+            </div>
+            <iframe id="video" width="100%" height="800" src="https://www.youtube.com/embed/-ezfi6FQ8Ds?autoplay=1&mute=1"></iframe>
+            <!-- <video id="video" src="/video/venom.mp4" autoplay ></video> -->
+        </div>
+
+        
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-inner">
+                    <h3 class="category"><a href="./action.html">Action</a></h3>
+                    
+                        <div class="carousel-item active">
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://media2.firstshowing.net/firstshowing/img11/outsidethewirePostermainimgTW02b.jpg" class="imgSlide"  alt="outside">
+                            </div></a>
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://m.media-amazon.com/images/M/MV5BYmRmMWZhZGItYzA4MC00ZDYyLWE0OTMtYmM0MWRiN2Q4NGU2XkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_.jpg" class="imgSlide"  alt="angel has fallen">
+                            </div></a>
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMWU0MGYwZWQtMzcwYS00NWVhLTlkZTAtYWVjOTYwZTBhZTBiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" class="imgSlide"  alt="bad boys">
+                            </div></a>
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://images.moviefit.me/t/o/9358-district-b13.jpg" class="imgSlide"  alt="Banlieue 13">
+                            </div></a>
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://m.media-amazon.com/images/M/MV5BYzBlMjBhMGMtYWY5OS00MzhkLTlmMGEtM2VjZTZhMWY5MzZmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" class="imgSlide"  alt="Bloodshot">
+                            </div></a>
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://i1.sndcdn.com/artworks-ye9Q6ucgZko7R36h-UlGh4g-t500x500.jpg" class="imgSlide"  alt="fast and furious">
+                            </div></a>
+
+                        </div>
+
+                        <div class="carousel-item ">
+
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://m.media-amazon.com/images/M/MV5BOTY2NzFjODctOWUzMC00MGZhLTlhNjMtM2Y2ODBiNGY1ZWRiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg" class="imgSlide"  alt="free guy">
+                            </div></a>
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://pbs.twimg.com/media/EJUk00iUYAAu5sU?format=jpg&name=large" class="imgSlide"  alt="gemini-man">
+                            </div></a>
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://upload.wikimedia.org/wikipedia/he/e/e6/Hulk_poster.jpg" class="imgSlide"  alt="hulk">
+                            </div></a>
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://images.fandango.com/ImageRenderer/0/0/redesign/static/img/default_poster.png/0/images/masterrepository/Fandango/222997/FND_poster_ShangChi_InTheaters.jpg" class="imgSlide"  alt="Shang Chi">
+                            </div></a>
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://m.media-amazon.com/images/M/MV5BYTk3MDljOWQtNGI2My00OTEzLTlhYjQtOTQ4ODM2MzUwY2IwXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg" class="imgSlide"  alt="spider-man">
+                            </div></a>
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://lionsgate.brightspotcdn.com/59/e8/576c91ae47e4aa7fd6240dc48674/john-wick-chapter-1-movies-poster-01.jpg" class="imgSlide"  alt="john wick">
+                            </div></a>
+
+                        </div>
+                        <div class="carousel-item">
+                            
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMjYwODExNzUwMV5BMl5BanBnXkFtZTgwNTgwNjUyOTE@._V1_.jpg" class="imgSlide"  alt="the mechanic">
+                            </div></a>
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/the-suicide-squad-et00309402-27-09-2021-01-23-30.jpg" class="imgSlide"  alt="the suicide squad">
+                            </div></a>
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://m.media-amazon.com/images/M/MV5BOTY4NDcyZGQtYmVlNy00ODgwLTljYTMtYzQ2OTE3NDhjODMwXkEyXkFqcGdeQXVyNzYzODM3Mzg@._V1_.jpg" class="imgSlide"  alt="tomb raider">
+                            </div></a>
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMjI5Njk0NTIyNV5BMl5BanBnXkFtZTgwNjU4MjY5MDI@._V1_.jpg" class="imgSlide"  alt="underworld">
+                            </div></a>
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://ridiculousdata.com/wp-content/uploads/2021/08/Venom-2-poster-e1619683611557-865x1024-1.jpg" class="imgSlide"  alt="Venom2">
+                            </div></a>
+                            <a href="./action.html" class="link"><div class="cards">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNGVkOTlhOTktNjZiNS00NDg3LWIxMDAtZTY5Y2E0YjllN2IxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg" class="imgSlide"  alt="wrath of man">
+                            </div></a>
+                        </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            
+       </div>
+    <br><br>
+        
+    <h3 class="category"><a href="./drama.html">Drama</a></h3>
+    <div id="carouselExampleControlsNoTouching2" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+        <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+
+                <a href="./drama.html" class="link"><div class="cards">
+                    <img src="https://www.filmandtvnow.com/wp-content/uploads/2019/08/hiddenlife.jpg" class="imgSlide"  alt="A_hidden_life">
+                </div></a>
+                <a href="./drama.html" class="link"><div class="cards">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTkxMTI2MjE4OF5BMl5BanBnXkFtZTgwMjIyODQzNTM@._V1_.jpg" class="imgSlide"  alt="Adrift">
+                </div></a>
+                <a href="./drama.html" class="link"><div class="cards">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNjBlNGNjOWUtOWE3NC00OTU3LTk2ZmQtZTIyYjc0NDgwMjM1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" class="imgSlide"  alt="all_day_and_a_night">
+                </div></a>
+                <a href="./drama.html" class="link"><div class="cards">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYwOTY0MDI2OV5BMl5BanBnXkFtZTgwOTE5NzM2MDI@._V1_.jpg" class="imgSlide"  alt="before_i_fall">
+                </div></a>
+                <a href="./drama.html" class="link"><div class="cards">
+                    <img src="https://www.themoviedb.org/t/p/w500/bABCBKYBK7A5G1x0FzoeoNfuj2.jpg" class="imgSlide"  alt="Good_Will_Hunting">
+                </div></a>
+                <a href="./drama.html" class="link"><div class="cards">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNThhZDZmNDctMmIwNi00MTYyLTk4OWQtNzk0NTY2ZDFhN2E2XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg" class="imgSlide"  alt="I_still_believe">
+                </div></a>
+
+            </div>
+
+          <div class="carousel-item ">
+
+            <a href="./drama.html" class="link"><div class="cards">
+                <img src="https://upload.wikimedia.org/wikipedia/he/2/22/Little_Women_%282017%29.jpg" class="imgSlide"  alt="Little-Women">
+            </div></a>
+            <a href="./drama.html" class="link"><div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTQ2NjE4NDE2NV5BMl5BanBnXkFtZTgwOTcwNDE5NzE@._V1_.jpg" class="imgSlide"  alt="me_before_you">
+            </div></a>
+            <a href="./drama.html" class="link"><div class="cards">
+                <img src="https://flxt.tmsimg.com/assets/p7820934_p_v8_aw.jpg" class="imgSlide"  alt="remember_me">
+            </div></a>
+            <a href="./drama.html" class="link"><div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTg4MzcxODA3OV5BMl5BanBnXkFtZTcwMTYzNDkwOQ@@._V1_FMjpg_UX1000_.jpg" class="imgSlide"  alt="safe_haven">
+            </div></a>
+            <a href="./drama.html" class="link"><div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BM2JhZWZjN2ItMDVhZi00MTljLWI0OTMtZjljNjUyMWRiNzE3XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg" class="imgSlide"  alt="The-Window">
+            </div></a>
+            <a href="./drama.html" class="link"><div class="cards">
+                <img src="https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/the-world-to-come-et00314607-08-09-2021-12-02-30.jpg" class="imgSlide"  alt="The-World-To-Come">
+            </div></a>
+
+          </div>
+          <div class="carousel-item">
+            
+            <a href="./drama.html" class="link"><div class="cards">
+                <img src="https://www.chicklit.nl/ckfinder/userfiles/images/Chicklit/dvds/t/The%20age%20of%20Adeline.jpg" class="imgSlide"  alt="the_age_of_adaline">
+            </div></a>
+            <a href="./drama.html" class="link"><div class="cards">
+                <img src="https://m.media-amazon.com/images/I/71sZANvaf+L._SL1500_.jpg" class="imgSlide"  alt="the_consppirator">
+            </div></a>
+            <a href="./drama.html" class="link"><div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTM5NjI1MTQ0N15BMl5BanBnXkFtZTcwNDM5OTc0Nw@@._V1_FMjpg_UX1000_.jpg" class="imgSlide"  alt="the_deep_blue_sea">
+            </div></a>
+            <a href="./drama.html" class="link"><div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" class="imgSlide"  alt="the_godfather">
+            </div></a>
+            <a href="./drama.html" class="link"><div class="cards">
+                <img src="https://m.media-amazon.com/images/I/51zUbui+gbL._SY445_.jpg" class="imgSlide"  alt="the_shawshank_redemption">
+            </div></a>
+            <a href="./drama.html" class="link"><div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg" class="imgSlide"  alt="titanic">
+            </div></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <br><br>
+
+    <h3 class="category"><a href="./comedy.html">Comedy</a></h3>
+    <div id="carouselExampleControlsNoTouching3" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+        <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+
+                <a href="./comedy.html" class="link"><div class="cards">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/91F9OaCTLkL._RI_.jpg" class="imgSlide"  alt="big_mama">
+                </div></a>
+                <a href="./comedy.html" class="link"><div class="cards">
+                    <img src="https://upload.wikimedia.org/wikipedia/he/0/07/Borat_movie.png" class="imgSlide"  alt="borat">
+                </div></a>
+                <a href="./comedy.html" class="link"><div class="cards">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Delivery_Man_Poster.jpg" class="imgSlide"  alt="delivery_man">
+                </div></a>
+                <a href="./comedy.html" class="link"><div class="cards">
+                    <img src="https://i.ebayimg.com/images/g/rHYAAMXQUShQ9G1V/s-l500.jpg" class="imgSlide"  alt="dont_be_a_menace">
+                </div></a>
+                <a href="./comedy.html" class="link"><div class="cards">
+                    <img src="https://static.kinoafisha.info/k/movie_posters/1080x1920/upload/movie_posters/0/7/7/8158770/fdf85f19c97905cf48a12641cbde4f36.jpg" class="imgSlide"  alt="dumber_and_dumber">
+                </div></a>
+                <a href="./comedy.html" class="link"><div class="cards">
+                    <img src="https://resizing.flixster.com/N0OSkkwiv6xjbkWr4UxLovuastE=/206x305/v2/https://flxt.tmsimg.com/NowShowing/4366/4366_aa.jpg" class="imgSlide"  alt="friday">
+                </div></a>
+
+            </div>
+
+          <div class="carousel-item ">
+
+            <a href="./comedy.html" class="link"><div class="cards">
+                <img src="https://resizing.flixster.com/JUesecxk5XpAnc4wqW1Wx-_TnmM=/206x305/v2/https://flxt.tmsimg.com/assets/p7941353_p_v10_aj.jpg" class="imgSlide"  alt="get-him-to-the-greek">
+            </div></a>
+            <a href="./comedy.html" class="link"><div class="cards">
+                <img src="https://media-cache.cinematerial.com/p/500x/rzvmjvyh/hall-pass-danish-dvd-movie-cover.jpg?v=1456715838" class="imgSlide"  alt="hallpass">
+            </div></a>
+            <a href="./comedy.html" class="link"><div class="cards">
+                <img src="https://flxt.tmsimg.com/assets/p8418274_p_v10_ay.jpg" class="imgSlide"  alt="hangover">
+            </div></a>
+            <a href="./comedy.html" class="link"><div class="cards">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/17579fd118cf727213009c7da163bcb753d24215417438e3bd99a0a842b9dfb6._V_SX300_.jpg" class="imgSlide"  alt="little_man">
+            </div></a>
+            <a href="./comedy.html" class="link"><div class="cards">
+                <img src="https://flxt.tmsimg.com/assets/p10521084_p_v10_ap.jpg" class="imgSlide"  alt="moms_night_out">
+            </div></a>
+            <a href="./comedy.html" class="link"><div class="cards">
+                <img src="https://upload.wikimedia.org/wikipedia/he/thumb/9/90/Movie_poster_for_Scary_Movie_.jpg/250px-Movie_poster_for_Scary_Movie_.jpg" class="imgSlide"  alt="scary_movie">
+            </div></a>
+
+          </div>
+          <div class="carousel-item">
+            
+            <a href="./comedy.html" class="link"><div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTQ1OTU0ODcxMV5BMl5BanBnXkFtZTcwOTMxNTUwOA@@._V1_.jpg" class="imgSlide"  alt="ted">
+            </div></a>
+            <a href="./comedy.html" class="link"><div class="cards">
+                <img src="https://iamyourtargetdemographic.files.wordpress.com/2014/02/that-awkward-moment.jpg" class="imgSlide"  alt="that_awkward_moment">
+            </div></a>
+            <a href="./comedy.html" class="link"><div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTQxODE3NjM1Ml5BMl5BanBnXkFtZTcwMzkzNjc4OA@@._V1_.jpg" class="imgSlide"  alt="the_end">
+            </div></a>
+            <a href="./comedy.html" class="link"><div class="cards">
+                <img src="https://flxt.tmsimg.com/assets/p9742380_p_v10_ai.jpg" class="imgSlide"  alt="we're_the_millers">
+            </div></a>
+            <a href="./comedy.html" class="link"><div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BNDlkMDQ1NzUtNGE3OC00NmUwLWI0NjAtNDJmODUzY2NhOGIzL2ltYWdlXkEyXkFqcGdeQXVyNDg2MjUxNjM@._V1_.jpg" class="imgSlide"  alt="why_him">
+            </div></a>
+            <a href="./comedy.html" class="link"><div class="cards">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/77/With_the_zohan.jpg/220px-With_the_zohan.jpg" class="imgSlide"  alt="zohan">
+            </div></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching3" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <br><br>
+
+    <h3 class="category"><a href="./animation.html">Animation</a></h3>
+    <div id="carouselExampleControlsNoTouching4" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+        <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+
+                <a href="./animation.html" class="link"><div class="cards">
+                    <img src="https://i.ebayimg.com/images/g/D~kAAOxywbNQ9s3W/s-l500.jpg" class="imgSlide"  alt="animals_united">
+                </div></a>
+                <a href="./animation.html" class="link"><div class="cards">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMzI1MjA0MzUtNGYzZi00OWE0LWI5OWUtZTYyYzllNzg1M2MwXkEyXkFqcGdeQXVyMTgwOTE5NDk@._V1_.jpg" class="imgSlide"  alt="ant_bully">
+                </div></a>
+                <a href="./animation.html" class="link"><div class="cards">
+                    <img src="https://www.whatsnewnetflix.com/wp-content/uploads/netflix/tt9204164-poster.jpg" class="imgSlide"  alt="bigfoot_family">
+                </div></a>
+                <a href="./animation.html" class="link"><div class="cards">
+                    <img src="https://m.media-amazon.com/images/I/51xlf28jbiL.jpg" class="imgSlide"  alt="kung-fu-panda">
+                </div></a>
+                <a href="./animation.html" class="link"><div class="cards">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZTQyNTU0MDktYTFkYi00ZjNhLWE2ODctMzBkM2U1ZTk3YTMzXkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_.jpg" class="imgSlide"  alt="luca">
+                </div></a>
+                <a href="./animation.html" class="link"><div class="cards">
+                    <img src="https://i.mydramalist.com/4JpjJ_4f.jpg" class="imgSlide"  alt="monkey_king">
+                </div></a>
+
+            </div>
+
+          <div class="carousel-item ">
+
+            <a href="./animation.html" class="link"><div class="cards">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/c808b34d3ba16d27609eafe02a50bbdf7d9e5eaff2a003fbb74893938a99ac59._RI_V_TTW_.jpg" class="imgSlide"  alt="nemo">
+            </div></a>
+            <a href="./animation.html" class="link"><div class="cards">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/p_onward_19732_09862641.jpeg?region=0%2C0%2C540%2C810" class="imgSlide"  alt="onwaed">
+            </div></a>
+            <a href="./animation.html" class="link"><div class="cards">
+                <img src="https://m.media-amazon.com/images/I/51x3VE7ywjL._AC_SY580_.jpg" class="imgSlide"  alt="Raya">
+            </div></a>
+            <a href="./animation.html" class="link"><div class="cards">
+                <img src="https://lh3.googleusercontent.com/proxy/4CnJpmf7DdrzulkzrJE1FfqxpAbfGs6m2g3cbTx4l2IKzCTuI5_Kl22vodpUlafPxWUzs-dvsBi_vDQvJ_qOt0fNBI0Ygal0xeCV8R07krtgY8aHYzni9R-SAxUa" class="imgSlide"  alt="rise_of_the_guardians">
+            </div></a>
+            <a href="./animation.html" class="link"><div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BNjkyNzQ4ODItMTkwZi00ODY3LWI3MzgtZDAyZjJiOWEwMDYxXkEyXkFqcGdeQXVyODk0OTc5NTQ@._V1_.jpg" class="imgSlide"  alt="secret_magic">
+            </div></a>
+            <a href="./animation.html" class="link"><div class="cards">
+                <img src="https://upload.wikimedia.org/wikipedia/en/f/f7/Spies_in_Disguise_Final_Poster.jpeg" class="imgSlide"  alt="spies_in_disguise">
+            </div></a>
+
+          </div>
+          <div class="carousel-item">
+            
+            <a href="./animation.html" class="link"><div class="cards">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a8/Tangled_poster.jpg" class="imgSlide"  alt="tangled">
+            </div></a>
+            <a href="./animation.html" class="link"><div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_FMjpg_UX1000_.jpg" class="imgSlide"  alt="the-incredibles">
+            </div></a>
+            <a href="./animation.html" class="link"><div class="cards">
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/63/The_Croods.png" class="imgSlide"  alt="the_croods">
+            </div></a>
+            <a href="./animation.html" class="link"><div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTgxOTY4Mjc0MF5BMl5BanBnXkFtZTcwNTA4MDQyMw@@._V1_FMjpg_UX1000_.jpg" class="imgSlide"  alt="toy_story">
+            </div></a>
+            <a href="./animation.html" class="link"><div class="cards">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTk3NDE2NzI4NF5BMl5BanBnXkFtZTgwNzE1MzEyMTE@._V1_FMjpg_UX1000_.jpg" class="imgSlide"  alt="up">
+            </div></a>
+            <a href="./animation.html" class="link"><div class="cards">
+                <img src="https://resizing.flixster.com/rhPHYS0MGJr1NnsewSSJqmjwseo=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzL2FkODNhNzI1LTRhOWItNDg0OC05ODcxLWM5NDlmMzVhZTYxYi53ZWJw" class="imgSlide"  alt="wall_E">
+            </div></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching4" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching4" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <br><br>
+
+</main>
+
+<footer>
+    <div class="about">
+        
+        <div class="contact_about">
+            <br>
+            <h2 style="text-align: center;color: white;">contact :</h2>
+            <hr>
+            <div class="contact_icon" >
+                <a href="https://www.instagram.com/ezradasa/"><img class="img_icon" src="https://i.ibb.co/hmLMwdP/icon-instagram.png"></a>
+                <a href="https://www.facebook.com/people/%D7%A2%D7%96%D7%A8%D7%90-%D7%93%D7%A1%D7%94/100000602785592"><img class="img_icon" src="https://i.ibb.co/p2rZnzL/facebook-icon.png"></a>
+                <a href="https://github.com/EzraDasa"><img class="img_icon" src="https://i.ibb.co/ZHfWkt3/Git-Hub-logo.png" style="width: 50px;height: 28px;"></a>
+                <a href="https://www.linkedin.com/login"><img class="img_icon" src="https://i.ibb.co/myWXRJt/linked-in-icon.png" style="width: 50px;height: 25px;"></a>
+            </div><br>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./javascript/operation_index.js"></script>
+</body>
+</html>
