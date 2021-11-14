@@ -40,7 +40,7 @@ axios
             sum=0;
                 
                 for (let i = 0; i < allMovies.length; i++) {
-                    products.innerHTML += `<tr>
+                    products.innerHTML += `<tr id="${allMovies[i].cartId}">
                     <th scope="row">${i+1}</th>
                     <td class="nameMovie"><b>${allMovies[i].name}</b></td>
                     <td class="imgMovie"><img class="imgCart" src="${allMovies[i].img}"></td>
@@ -69,9 +69,8 @@ function remove(idRemove){
     .then((res)=>{
         console.log(res);
     })
-    .catch((err)=>{
-        throw err
-    })
-    window.location.reload();
+    .catch((error)=>{throw error;})
+    document.getElementById(idRemove).innerHTML = "";
+    document.getElementById(idRemove).style.display = "none";
 }
 

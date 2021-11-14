@@ -11,7 +11,7 @@ axios
   allMovies=res.data;
   for (let i = 0; i < allMovies.length; i++) {
     categoryMovies.innerHTML += `<article class="cardMovie">
-      <div class="flip-box">
+      <div class="flip-box" id="${allMovies[i]._id}">
            <div class="flip-box-inner">
              <div class="flip-box-front">
                <img src="${allMovies[i].img}" alt="${allMovies[i].name}" style="width:100%;height:100%;">
@@ -114,7 +114,9 @@ function deleteToMovies(MovieId) {
     .then((response)=>{
       console.log(response.data);
     })
-    .catch((error)=>{console.log(error);})
+    .catch((error)=>{throw error;})
+    document.getElementById(MovieId).innerHTML = ""
+    document.getElementById(MovieId).style.display = "none"
   }
 }
 
