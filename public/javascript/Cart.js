@@ -68,9 +68,9 @@ function remove(idRemove){
     .patch(`/cart/${idRemove}`)//only one document
     .then((res)=>{
         console.log(res);
+        document.getElementById(idRemove).innerHTML = "";
+        document.getElementById(idRemove).style.display = "none";
     })
     .catch((error)=>{throw error;})
-    document.getElementById(idRemove).innerHTML = "";
-    document.getElementById(idRemove).style.display = "none";
 }
 

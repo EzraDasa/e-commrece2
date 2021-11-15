@@ -113,10 +113,10 @@ function deleteToMovies(MovieId) {
     .delete(`/products/${MovieId}`)
     .then((response)=>{
       console.log(response.data);
+      document.getElementById(MovieId).innerHTML = ""
+      document.getElementById(MovieId).style.display = "none"
     })
     .catch((error)=>{throw error;})
-    document.getElementById(MovieId).innerHTML = ""
-    document.getElementById(MovieId).style.display = "none"
   }
 }
 
